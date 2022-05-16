@@ -12,7 +12,7 @@ var fs = require('fs');
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://8080-deaadabecbaedfcaeeecdcaceefaffcabd.ide.exam.ly');
+  await page.goto('https://8080-deaadabecbaedfcaeeacecacdbb.ide.exam.ly');
   await page.screenshot({path: './output/example.png'});
   
   const image1 = fs.readFileSync("./screenshots/example.png");
@@ -25,7 +25,7 @@ var fs = require('fs');
   console.log('TESTCASE:test_case7:success:',diffpercent);
 
   const page1 = await browser.newPage();
-  await page1.goto('https://8081-deaadabecbaedfcaeeecdcaceefaffcabd.ide.exam.ly');
+  await page1.goto('https://8081-deaadabecbaedfcaeeacecacdbb.ide.exam.ly');
   await page1.screenshot({path: './output/example1.png'});
   
   const image3 = fs.readFileSync("./screenshots/example1.png");
